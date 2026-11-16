@@ -1,0 +1,250 @@
+\documentclass[a4paper,10pt]{extarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype}
+
+\geometry{a4paper, left=0.65in, right=0.65in, top=0.55in, bottom=0.55in}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+
+\setlist[itemize]{leftmargin=1.2em, noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt, itemsep=1.5pt}
+
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+
+\hypersetup{colorlinks=true, urlcolor=blue!55!black, linkcolor=black}
+\urlstyle{same}
+
+\newcommand{\resumeSubheading}[4]{%
+    \textbf{#1} \hfill #2\\
+    \textit{#3} \hfill \textit{#4}}
+\newcommand{\projectHeading}[2]{\textbf{#1} \hfill \textit{#2}}
+
+% Tailored for business/technology master's: NUS MComp (IS), NTU MSc BA, TUM MSc IS,
+% UBC MBAN, Aalto MSc ISM, SMU MITB, Mannheim MSc Business Informatics, Frankfurt School MBA.
+% Lines marked "% TODO" are places where a real number would strengthen the CV.
+% Only fill them with figures you can back up; delete the comment otherwise.
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Shivansh Shrivastava}}\\[4pt]
+    Bangalore, India \quad | \quad
+    \href{mailto:shivansh01308@gmail.com}{shivansh01308@gmail.com}
+    \quad | \quad +91 7069448535\\[2pt]
+    \href{https://www.linkedin.com/in/shivansh-shrivastava-716013205}{LinkedIn}
+    \quad | \quad
+    \href{https://github.com/shivansh-13}{GitHub}
+    \quad | \quad
+    \href{https://loresocial.in}{loresocial.in}
+\end{center}
+
+\section*{PROFILE}
+
+Software engineer with 2+ years of full-time experience owning consumer-facing travel products used by
+\textbf{600K+ people daily} at Fareportal, and a product-management internship in enterprise data
+governance at Dr.\ Reddy's Laboratories. I have shipped LLM features from prototype to production and
+led a platform migration across teams. I want to move from building systems to shaping the business and
+product decisions behind them, at the intersection of information systems, analytics and management.
+
+\section*{EDUCATION}
+
+\resumeSubheading
+{Birla Institute of Technology and Science (BITS) Pilani}
+{Hyderabad, India}
+{B.E. Computer Science \quad | \quad CGPA: \textbf{7.7/10} \quad | \quad Medium of instruction: English}
+{Sep 2020 -- Jul 2024}
+
+\textbf{Business \& analytics coursework:} Principles of Economics, Behavioral Economics, Probability and
+Statistics, Data Mining, Machine Learning, Database Systems, Technical Report Writing.\\
+\textbf{Computing coursework:} Data Structures and Algorithms, Object-Oriented Programming, Operating
+Systems, Computer Networks, Cryptography, Theory of Computation.\\
+\textbf{Industry practice:} Practice School I and II (25 units, both graded \textbf{A}); Practice School II
+was the 6-month product-management internship at Dr.\ Reddy's.
+
+\vspace{2pt}
+\textbf{Class XII:} Green Valley High School, CBSE (94.6\%, 2020) \quad | \quad
+\textbf{Class X:} Zen School, CBSE (95.4\%, 2018)
+
+\section*{PROFESSIONAL EXPERIENCE}
+
+\resumeSubheading
+{Fareportal (CheapOair, OneTravel)}
+{Gurugram, India}
+{Software Engineer}
+{Jul 2024 -- Present}
+
+\begin{itemize}
+    \item Own the flight search, listing and filtering services behind \textbf{600K+ daily users}
+    across web, iOS, Android and chatbot channels; accountable for reliability and performance of the
+    company's core booking funnel. % TODO: add a business metric if you have one (e.g. latency or error-rate change, conversion impact)
+
+    \item Conceived and shipped \textbf{AI-powered natural-language flight filters} for CheapOair, turning
+    free-text customer queries into structured search filters with the Gemini API; later moved the
+    integration to Google Cloud Vertex AI for production scale.
+
+    \item Initiated an internal \textbf{LLM-powered pull-request reviewer} (Azure DevOps + Gemini API)
+    to automate code-review feedback and streamline engineering workflows. % TODO: adoption or time saved, if measured
+
+    \item Led the cross-team migration from shared NPM packages to \textbf{micro-frontends} (Webpack
+    Module Federation), letting teams deploy independently and experiment faster; cut bundle size by
+    \textbf{12\%} with sub-second package loading.
+
+    \item Cut frontend build time from \textbf{${\sim}$15 to 4 minutes} and unnecessary re-renders by
+    \textbf{${\sim}$88\%}; upgraded production apps from React 17 to 19 and Node.js 14 to 20.
+
+    \item Built a \textbf{real-time flight viewer} (React, ASP.NET, Redis) showing live viewer counts per
+    flight, and reduced nearby-airport distance lookups from ${\sim}$3,500 computations per query to
+    fewer than 70.
+
+    \item \textbf{Mentored 2 engineering interns} over 6 months on debugging, production workflows and
+    engineering practices; received the \textbf{Incredibles Award} for Ownership and Accountability in
+    two consecutive quarters (Q1--Q2 2026).
+\end{itemize}
+
+\vspace{3pt}
+\resumeSubheading
+{Dr. Reddy's Laboratories}
+{Hyderabad, India}
+{Product Management Intern -- Enterprise Architecture \& Master Data Governance}
+{Jan 2024 -- Jun 2024}
+
+\begin{itemize}
+    \item Worked with \textbf{10+ business units} on the Emerging Markets Finance Transformation,
+    contributing to product roadmaps, data pipelines and data-quality controls.
+
+    \item Defined and validated \textbf{200+ Material Master data-quality rules} and assessed
+    \textbf{40+ Product Master attributes}, proposing data-remediation strategies.
+
+    \item Configured the rules across SAP, Informatica IICS, Google Cloud Platform, Kinaxis and
+    MuleSoft, turning business-unit requirements into system controls.
+\end{itemize}
+
+\vspace{3pt}
+\resumeSubheading
+{Catalog -- Immutable Ren Labs}
+{Hyderabad, India}
+{Software Development Engineer Intern}
+{May 2023 -- Aug 2023}
+
+\begin{itemize}
+    \item Built the frontend for \textbf{BTC--ETH atomic swaps (HTLC)} on OpenSea, letting users buy
+    Ethereum-based NFTs directly with Bitcoin.
+\end{itemize}
+
+\vspace{3pt}
+\resumeSubheading
+{Swecha Telangana}
+{Remote}
+{Open Source Developer Intern}
+{Jun 2022 -- Jul 2022}
+
+\begin{itemize}
+    \item Designed (Penpot wireframes) and built a \textbf{multi-user screen-sharing feature} for the
+    open-source BigBlueButton platform.
+\end{itemize}
+
+\section*{PRODUCT \& ANALYTICS PROJECTS}
+
+\projectHeading
+{Lore -- \href{https://loresocial.in}{loresocial.in}}
+{Personal product}
+
+\begin{itemize}
+    \item Took a social product from idea to launch on my own: built it with AI-assisted development
+    (Claude Code), Supabase and Vercel, and instrumented it with PostHog product analytics.
+
+    \item Reached \textbf{75 active users in the first 30 days}; latest 7-day snapshot showed
+    \textbf{260 sessions and 2,424 pageviews}. % TODO: add one product decision you made from this data, if true
+\end{itemize}
+
+\vspace{3pt}
+\projectHeading
+{\href{https://github.com/shivansh-13/ML-models-LR-Percptron-FLDA}{Machine Learning Models from Scratch}}
+{Mar 2023}
+
+\begin{itemize}
+    \item Implemented Perceptron, Fisher's Linear Discriminant Analysis and Logistic Regression using
+    only NumPy and Pandas; reached \textbf{97.02\%} accuracy with Logistic Regression.
+\end{itemize}
+
+\section*{LEADERSHIP}
+
+\resumeSubheading
+{Computer Science Association (CSA), BITS Pilani}
+{Hyderabad, India}
+{President (Aug 2022 -- Jul 2023); Joint Secretary (Jan 2022 -- Aug 2022)}
+{}
+
+\begin{itemize}
+    \item Hosted \textbf{Richard Stallman}, founder of GNU, on campus for \textbf{400+ students};
+    association won the \textbf{Best Association Award} under my presidency.
+
+    \item Led the Fest Organising Body for Atmos '22, managing cross-functional teams and operations that
+    generated \textbf{INR 4.6 lakh in revenue}.
+
+    \item Coordinated student teams across \textbf{50+ events}, including hackathons and interview drives.
+\end{itemize}
+
+\vspace{3pt}
+\resumeSubheading
+{Postman Student Leader}
+{BITS Pilani, Hyderabad}
+{Ran workshops introducing students to APIs and Postman}
+{Apr 2022 -- Mar 2023}
+
+\section*{OPEN SOURCE \& WRITING}
+
+\begin{itemize}
+    \item \textbf{Code Review Graph:} found and fixed a security gap where an unignored SQLite database
+    exposed codebase architecture; fix accepted and deployed. \textbf{Homebrew:} merged an update to
+    the MacUpdate cask.
+
+    \item Medium articles:
+    \href{https://medium.com/@shivansh01308/how-we-built-real-time-flight-viewer-thats-scalable-c5441b2ba36b}{How We Built a Real-Time Flight Viewer That's Scalable};
+    \href{https://medium.com/@shivansh01308/understanding-javascript-generators-and-async-await-a-deep-dive-c7dc1091047f}{JavaScript Generators and Async/Await};
+    \href{https://medium.com/@shivansh01308/fixing-the-infamous-react-invalid-hook-call-error-a-developers-guide-cde3af4dbfb8}{Fixing the React Invalid Hook Call Error}.
+\end{itemize}
+
+\section*{SKILLS}
+
+\textbf{Product \& Business:} Product roadmapping, stakeholder management across business units, data
+governance and data-quality rules, product analytics (PostHog), technical writing\\
+\textbf{Data \& AI:} Python, NumPy, Pandas, Scikit-learn, SQL (MySQL, BigQuery), LLM integration
+(Gemini, Vertex AI, OpenAI API), prompt engineering, RAG\\
+\textbf{Engineering:} JavaScript, TypeScript, C\#, C++, React, Node.js, ASP.NET, Redis, Google Cloud
+Platform, Azure DevOps, Webpack, Grafana, Kibana, CI/CD\\
+\textbf{Enterprise systems:} SAP, Informatica IICS, MuleSoft, Kinaxis\\
+\textbf{Languages:} English (full professional; degree taught in English), Hindi (native), Gujarati
+(native), Russian (limited working)
+
+\section*{AWARDS \& PROGRAMMES}
+
+\begin{itemize}
+    \item \textbf{Incredibles Award, Fareportal} (Q1 and Q2 2026); \textbf{Best Association Award, BITS
+    Pilani} (2023).
+
+    \item \textbf{McKinsey Forward Program} (Jul 2025): McKinsey's programme on problem solving,
+    communication and digital skills for early-career professionals.
+
+    \item \textbf{ACM-IKDD Summer School on Data Science, IIT Gandhinagar} (Jul 2022): two-week
+    intensive on the data-science lifecycle, experiment design, A/B testing and statistical modelling,
+    with sessions from Google, Flipkart, Swiggy and ShareChat.
+
+    \item \textbf{Gen AI Exchange Bootcamp, Google Developer Community} (Mar 2025): built and deployed a
+    Gemini chatbot on GCP.
+
+    \item \textbf{Competitive programming:} global rank 609, CodeChef Starters 55. \textbf{Music:}
+    YouTube keyboard channel with \textbf{15,000+ hours} of watch time.
+\end{itemize}
+
+\end{document}
