@@ -1,0 +1,260 @@
+\documentclass[a4paper,10pt]{extarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype}
+
+\geometry{a4paper, left=0.65in, right=0.65in, top=0.55in, bottom=0.55in}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+
+\setlist[itemize]{leftmargin=1.2em, noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt, itemsep=1.5pt}
+
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+
+\hypersetup{colorlinks=true, urlcolor=blue!55!black, linkcolor=black}
+\urlstyle{same}
+
+\newcommand{\resumeSubheading}[4]{%
+    \textbf{#1} \hfill #2\\
+    \textit{#3} \hfill \textit{#4}}
+\newcommand{\projectHeading}[2]{\textbf{#1} \hfill \textit{#2}}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Shivansh Shrivastava}}\\[4pt]
+    Bangalore, India \quad | \quad
+    \href{mailto:shivansh01308@gmail.com}{shivansh01308@gmail.com}
+    \quad | \quad +91 7069448535\\[2pt]
+    \href{https://www.linkedin.com/in/shivansh-shrivastava-716013205}{LinkedIn}
+    \quad | \quad
+    \href{https://github.com/shivansh-13}{GitHub}
+    \quad | \quad
+    \href{https://loresocial.in}{loresocial.in}
+\end{center}
+
+\section*{PROFILE}
+
+Software engineer with more than 2 years of building high-scale consumer systems and LLM-powered features at
+Fareportal, preceded by enterprise data-governance work at Dr.\ Reddy's. Interested in how data,
+software systems and AI come together to solve business problems, and seeking to pursue formal higher education to deepen that foundation.
+
+\section*{EDUCATION}
+
+\resumeSubheading
+{Birla Institute of Technology and Science (BITS) Pilani}
+{Hyderabad, India}
+{B.E. Computer Science \quad | \quad CGPA: \textbf{7.7/10}}
+{Sep 2020 -- Jul 2024}
+
+\textbf{Relevant Coursework:} Data Structures and Algorithms, Database Management Systems, Machine
+Learning, Data Mining, Probability and Statistics, Operating Systems, Computer Networks,
+Object-Oriented Programming, Cryptography, Theory of Computation, Human Computer Interaction.
+
+\vspace{2pt}
+\textbf{Class XII:} Green Valley High School, CBSE (94.6\%, 2020) \quad | \quad
+\textbf{Class X:} Zen School, CBSE (95.4\%, 2018)
+
+\section*{PROFESSIONAL EXPERIENCE}
+
+\resumeSubheading
+{Fareportal}
+{Gurugram, India}
+{Software Engineer}
+{Jul 2024 -- Present}
+
+\begin{itemize}
+    \item Own the flight search, listing and filtering services used by \textbf{600K+ daily users}
+    across web, iOS, Android and chatbot, accountable for production reliability and performance.
+
+    \item Built a \textbf{Real-Time Flight Viewer} (React, ASP.NET, Redis) using heartbeat-based
+    session tracking to show live flight presence and viewer counts at scale.
+
+    \item Designed \textbf{AI-powered natural language flight filters} for Cheapoair, converting
+    free-text queries into structured search filters with the Gemini API; later migrated the
+    integration to Google Cloud Vertex AI.
+
+    \item Built an internal \textbf{LLM-powered Pull Request Reviewer} integrating Azure DevOps and
+    the Gemini API to automate code review insights.
+
+    \item Led migration from shared NPM packages to \textbf{Micro Frontends (Webpack Module
+    Federation)}, enabling independent deployments; reduced bundle size by \textbf{12\%} with
+    sub-second package fetching.
+
+    \item Cut frontend build time from \textbf{${\sim}$15 to 4 minutes} and reduced unnecessary
+    re-renders by ${\sim}$\textbf{88\%} with React Compiler; upgraded production apps from React 17
+    to 19 and Node.js 14 to 20.
+
+    \item Optimised nearby-airport distance lookups from ${\sim}$3,500 computations per query to
+    fewer than 70, removing millions of redundant calculations.
+\end{itemize}
+
+\vspace{3pt}
+\resumeSubheading
+{Dr. Reddy's Laboratories}
+{Hyderabad, India}
+{Product Management Intern -- Enterprise Architecture \& Master Data Governance}
+{Jan 2024 -- Jun 2024}
+
+\begin{itemize}
+    \item Supported enterprise Finance Transformation across \textbf{10+ business units},
+    contributing to product roadmaps, data pipelines and data-quality controls.
+
+    \item Validated and defined \textbf{200+ Material Master data-quality rules} and evaluated
+    \textbf{40+ Product Master attributes}, proposing data remediation strategies.
+
+    \item Configured data-quality rules for Emerging Markets Finance Transformation using SAP,
+    Informatica IICS, Google Cloud Platform, Kinaxis and MuleSoft.
+\end{itemize}
+
+\vspace{3pt}
+\resumeSubheading
+{Catalog -- Immutable Ren Labs}
+{Hyderabad, India}
+{Software Development Engineer Intern}
+{May 2023 -- Aug 2023}
+
+\begin{itemize}
+    \item Built the frontend (React, Tailwind CSS, JavaScript) for \textbf{BTC--ETH Atomic Swaps
+    (HTLC)} on OpenSea, letting users buy Ethereum-based NFTs directly with Bitcoin through
+    decentralised transactions.
+\end{itemize}
+
+\vspace{3pt}
+\resumeSubheading
+{Swecha Telangana}
+{Remote}
+{Open Source Developer Intern}
+{Jun 2022 -- Jul 2022}
+
+\begin{itemize}
+    \item Contributed a \textbf{multi-user screen-sharing feature} to the open-source
+    BigBlueButton platform; designed feature wireframes in Penpot.
+\end{itemize}
+
+\section*{SELECTED PROJECTS}
+
+\projectHeading
+{Lore -- \href{https://loresocial.in}{loresocial.in}}
+{Personal Project}
+
+\begin{itemize}
+    \item Independently built and launched a social product end to end, using Claude Code for
+    AI-assisted full-stack development and rapid prototyping.
+
+    \item Used Supabase for backend services, Vercel for deployment and PostHog for product
+    analytics; acquired \textbf{75 active users in the first 30 days} after launch.
+\end{itemize}
+
+\vspace{3pt}
+\projectHeading
+{\href{https://github.com/shivansh-13/Polygon-Decomposition-into-Convex-Polygon-DAA-}{Polygon Decomposition into Convex Polygons}}
+{Mar 2023}
+
+\begin{itemize}
+    \item Implemented a research paper on convex polygon decomposition in C++ using a
+    \textbf{Doubly Connected Edge List (DCEL)} and object-oriented design; built Python
+    visualisations and Doxygen documentation.
+\end{itemize}
+
+\vspace{3pt}
+\projectHeading
+{\href{https://github.com/shivansh-13/ML-models-LR-Percptron-FLDA}{Machine Learning Models from Scratch}}
+{Mar 2023}
+
+\begin{itemize}
+    \item Implemented Perceptron, Fisher's Linear Discriminant Analysis and Logistic Regression
+    using only NumPy, Pandas and Matplotlib (no Scikit-learn, TensorFlow or PyTorch); achieved
+    \textbf{97.02\%} accuracy with Logistic Regression.
+\end{itemize}
+
+\section*{LEADERSHIP \& CAMPUS INVOLVEMENT}
+
+\resumeSubheading
+{Computer Science Association (CSA), BITS Pilani}
+{Hyderabad, India}
+{President}
+{Aug 2022 -- Jul 2023}
+
+\begin{itemize}
+    \item Hosted \textbf{Richard Stallman}, founder of GNU, on campus, attracting \textbf{400+
+    students}.
+
+    \item Led the Fest Organising Body for Atmos '22, coordinating cross-functional teams and
+    contributing to event operations that generated \textbf{INR 4.6 lakh in revenue}.
+
+    \item Previously Joint Secretary (Jan 2022 -- Aug 2022); coordinated student teams and
+    supported \textbf{50+ events}, including hackathons, technical events and interview drives.
+\end{itemize}
+
+\vspace{3pt}
+\resumeSubheading
+{Postman}
+{BITS Pilani, Hyderabad}
+{Postman Student Leader}
+{Apr 2022 -- Mar 2023}
+
+\begin{itemize}
+    \item Ran workshops and learning sessions introducing students to Postman and API development.
+\end{itemize}
+
+\section*{OPEN SOURCE \& TECHNICAL WRITING}
+
+\begin{itemize}
+    \item \textbf{Code Review Graph:} Identified and fixed a security vulnerability where an
+    unignored SQLite database exposed codebase architecture information; fix \textbf{accepted and
+    deployed}.
+
+    \item \textbf{Homebrew:} Merged pull request updating the MacUpdate cask in the official
+    Homebrew repository.
+
+    \item \href{https://medium.com/@shivansh01308/how-we-built-real-time-flight-viewer-thats-scalable-c5441b2ba36b}
+    {\textbf{How We Built a Real-Time Flight Viewer That's Scalable}}
+
+    \item \href{https://medium.com/@shivansh01308/understanding-javascript-generators-and-async-await-a-deep-dive-c7dc1091047f}
+    {\textbf{Understanding JavaScript Generators and Async/Await: A Deep Dive}}
+
+    \item \href{https://medium.com/@shivansh01308/fixing-the-infamous-react-invalid-hook-call-error-a-developers-guide-cde3af4dbfb8}
+    {\textbf{Fixing the Infamous React Invalid Hook Call Error: A Developer's Guide}}
+\end{itemize}
+
+\section*{TECHNICAL SKILLS}
+
+\textbf{Languages:} JavaScript, TypeScript, C\#, C++, Python\\
+\textbf{Frameworks \& Libraries:} React.js, Node.js, ASP.NET, .NET, Express.js, Redux\\
+\textbf{AI \& Machine Learning:} LLM Integration, Gemini API, Google Vertex AI, OpenAI API, Prompt
+Engineering, RAG, NumPy, Pandas, Scikit-learn\\
+\textbf{Cloud, Data \& Infrastructure:} Google Cloud Platform, BigQuery, Redis, MySQL, Supabase,
+Informatica IICS, MuleSoft, SAP\\
+\textbf{Engineering Tools:} Git, Azure DevOps, Webpack, Module Federation, Grafana, Kibana, KQL,
+PostHog, SonarQube, React Testing Library, CI/CD
+
+\section*{AWARDS, CERTIFICATES AND CONFERENCES}
+
+\begin{itemize}
+    \item \textbf{Incredibles Award, Fareportal:} Recognised for Ownership and Accountability in two consecutive quarters (Q1--Q2 2026).
+
+    \item \textbf{Best Association Award, BITS Pilani:} Received from the Technical Secretary for the Computer Science Association's performance under my presidency.
+
+    \item \textbf{ACM-IKDD Summer School on Data Science, IIT Gandhinagar} (Jul 2022): Two-week intensive, sponsored by ShareChat. Studied the data-science lifecycle end to end: data collection and cleaning, descriptive statistics, visualisation, experiment design, model evaluation, A/B testing and MLOps. Covered probabilistic and statistical modelling (MLE, MAP, fully Bayesian modelling), clustering, matrix factorisation, spatio-temporal data modelling and dimensionality reduction. Learned from researchers and engineers at Google (keynote by Kevin Murphy), Flipkart, Swiggy, ShareChat and IIT faculty, including applications in NLP, computer vision and earth and climate sciences.
+
+    \item \textbf{Gen AI Exchange Bootcamp, Google Developer Community} (Mar 2025): early access to the Gemini 2.5 API; built and deployed a Gemini chatbot on GCP with Firebase.
+
+    \item \textbf{McKinsey Forward Program} (Jul 2025). \textbf{Competitive Programming:} global
+    rank 609 in CodeChef Starters 55.
+
+    \item \textbf{Music \& Content Creation:} YouTube keyboard-instrumental channel with
+    \textbf{15,000+ hours of watch time}.
+\end{itemize}
+
+\end{document}
